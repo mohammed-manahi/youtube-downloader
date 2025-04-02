@@ -7,7 +7,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(config => config.SchemaFilter<EnumSchemaFiler>());
+builder.Services.AddSwaggerGen(config => config.SchemaFilter<EnumSchemaFilter>());
 builder.Services.AddSingleton<YoutubeClient>();
 
 var app = builder.Build();
